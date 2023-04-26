@@ -85,7 +85,7 @@ export const HeaderMenu: FC<PropsWithChildren<PropsWithChildren>> = ({
         </Link> */}
         <Link
           href="https://goo.gl/maps/FpK6HJUTKzB6QCbJ7"
-          title="My Weed map"
+          title="My Weed Map"
           passHref
         >
           <Box
