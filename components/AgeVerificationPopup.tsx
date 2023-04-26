@@ -50,24 +50,28 @@ const AgeVerificationPopup = ({ onVerify }: AgeVerificationPopupProps) => {
         px={6}
         width={{ base: '100%', md: '60%' }}
         height="fit-content"
+        textAlign="center"
       >
         <Box
           onTouchStart={handleClose}
           as="img"
-          src="/media/my-weed-older-20-only.webp"
+          src="/logo-my-weed.png"
           width="300px"
-          height="300px"
+          height="67px"
           maxW="inherit"
           alt="My Weed - 20 or older only"
           title="My Weed - 20 or older only"
+          display="inline-flex"
         />
         <Box
           as="h2"
-          display="flex"
+          display="block"
           flexDirection="row"
           alignItems="baseline"
-          fontSize="2xl"
+          fontSize="3xl"
+          fontWeight="bold"
           mt={4}
+          mb={4}
           whiteSpace="nowrap"
         >
           Are you 20 or older?
@@ -93,28 +97,11 @@ const AgeVerificationPopup = ({ onVerify }: AgeVerificationPopupProps) => {
           onMouseDown={verifyAge}
           onPointerDown={verifyAge}
           onTouchEnd={verifyAge}
+          fontWeight="bold"
         >
           Yes, I am over 20
         </Box>
         <br />
-        <Link href="https://ghostverse.org/">
-          <Box
-            as="span"
-            display="inline-flex"
-            color="#EF2625"
-            borderColor="#EF2625"
-            fontSize="xl"
-            borderWidth={1}
-            bgColor="ghostVerse.dark.lighter"
-            backdropFilter="blur(3px)"
-            py={2}
-            px={6}
-            mb={2}
-            mr="auto"
-          >
-            No, NFTs are better for me
-          </Box>
-        </Link>
       </Box>
     </Box>
   );
